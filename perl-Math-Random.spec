@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
 %define	pnam	Random
-Summary:	Math::Random - Random Number Generators
-Summary(pl):	Math::Random - Generatory liczb losowych
+Summary:	Math::Random - random number generators
+Summary(pl):	Math::Random - generatory liczb losowych
 Name:		perl-Math-Random
 Version:	0.67
 Release:	2
