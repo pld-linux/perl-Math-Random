@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Math
-%define	pnam	Random
+%define		pdir	Math
+%define		pnam	Random
 Summary:	Math::Random - random number generators
 Summary(pl):	Math::Random - generatory liczb losowych
 Name:		perl-Math-Random
