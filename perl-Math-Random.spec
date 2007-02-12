@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	Random
 Summary:	Math::Random - random number generators
-Summary(pl):	Math::Random - generatory liczb losowych
+Summary(pl.UTF-8):   Math::Random - generatory liczb losowych
 Name:		perl-Math-Random
 Version:	0.67
 Release:	2
@@ -23,9 +23,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Math::Random is a Perl port of the C version of randlib, which is
 a suite of routines for generating random deviates.
 
-%description -l pl
+%description -l pl.UTF-8
 Math::Random jest perlowym portem napisanej w C biblioteki randlib,
-bêd±cej zbiorem procedur do generowania liczb losowych.
+bÄ™dÄ…cej zbiorem procedur do generowania liczb losowych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
