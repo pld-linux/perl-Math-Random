@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	Random
 Summary:	Math::Random - random number generators
-Summary(pl.UTF-8):   Math::Random - generatory liczb losowych
+Summary(pl.UTF-8):	Math::Random - generatory liczb losowych
 Name:		perl-Math-Random
 Version:	0.67
 Release:	2
