@@ -13,8 +13,9 @@ Release:	1
 # same as perl except some C code
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Math/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	555c0fd25df5506cd81a9299430b58c7
+URL:		http://search.cpan.org/dist/Math-Random/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -43,7 +44,8 @@ mv example.pl examples
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT INSTALLDIRS=vendor
+	DESTDIR=$RPM_BUILD_ROOT \
+	INSTALLDIRS=vendor
 
 install -d $RPM_BUILD_ROOT%{_examplesdir}
 cp -r examples $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
@@ -54,11 +56,11 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README MANIFEST
+%{perl_vendorarch}/Math/*.pm
+%dir %{perl_vendorarch}/auto/Math/Random
+%attr(755,root,root) %{perl_vendorarch}/auto/Math/Random/*.so
+%{perl_vendorarch}/auto/Math/Random/*.ix
+%{perl_vendorarch}/auto/Math/Random/*.bs
 %dir %{_examplesdir}/%{name}-%{version}
 %attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*.pl
-%{perl_vendorarch}/%{pdir}/*.pm
-%dir %{perl_vendorarch}/auto/%{pdir}/%{pnam}
-%attr(755,root,root) %{perl_vendorarch}/auto/%{pdir}/%{pnam}/*.so
-%{perl_vendorarch}/auto/%{pdir}/%{pnam}/*.ix
-%{perl_vendorarch}/auto/%{pdir}/%{pnam}/*.bs
 %{_mandir}/man3/*
