@@ -8,13 +8,13 @@
 Summary:	Math::Random - random number generators
 Summary(pl.UTF-8):	Math::Random - generatory liczb losowych
 Name:		perl-Math-Random
-Version:	0.69
+Version:	0.70
 Release:	1
 # same as perl except some C code
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Math/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	555c0fd25df5506cd81a9299430b58c7
+# Source0-md5:	36be7507dbfedfa3e919f4ea47e650dc
 URL:		http://search.cpan.org/dist/Math-Random/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
