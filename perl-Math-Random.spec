@@ -60,7 +60,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/auto/Math/Random
 %attr(755,root,root) %{perl_vendorarch}/auto/Math/Random/*.so
 %{perl_vendorarch}/auto/Math/Random/*.ix
-%{perl_vendorarch}/auto/Math/Random/*.bs
 %dir %{_examplesdir}/%{name}-%{version}
 %attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*.pl
 %{_mandir}/man3/*
