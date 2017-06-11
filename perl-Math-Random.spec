@@ -9,7 +9,7 @@ Summary:	Math::Random - random number generators
 Summary(pl.UTF-8):	Math::Random - generatory liczb losowych
 Name:		perl-Math-Random
 Version:	0.71
-Release:	8
+Release:	9
 # same as perl except some C code
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
